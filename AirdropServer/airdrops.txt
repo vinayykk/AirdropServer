@@ -1,8 +1,0 @@
-4, Yellow, https://yellow.com/seasons
-4, Mode Vote, https://gov.mode.network/plugins/rewards/#/
-4, Imortal Game, https://immortalrising2.com/imt-airdrop/daily-checkin
-2, Camp, https://loyalty.campnetwork.xyz/loyalty
-1, Sahara AI, https://app.saharalabs.ai/#/individualLabeler/achievement
-1, XION, https://prometheansaga.com/
-1, Humanity Protocol, https://testnet.humanity.org/dashboard
-1, Owlto, https://owlto.finance/portfolio
