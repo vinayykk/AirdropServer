@@ -36,11 +36,17 @@ app.MapGet("/", async context =>
 // ✅ **API to get airdrops**
 app.MapGet("/get-airdrops", async () =>
 {
-    if (!File.Exists(FilePath)) return Results.Json(new { airdrops = Array.Empty<string>() });
+    Console.WriteLine($"Looking for file at path: {FilePath}");
+    if (!File.Exists(FilePath))
+    {
+        Console.WriteLine("File does not exist!");
+        return Results.Json(new { airdrops = Array.Empty<string>() });
+    }
 
     var data = await File.ReadAllLinesAsync(FilePath);
     return Results.Json(new { airdrops = data });
 });
+
 
 // ✅ **API to add a new airdrop**
   app.MapPost("/add-airdrop", async (HttpContext context) =>
