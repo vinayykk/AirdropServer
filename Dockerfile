@@ -4,6 +4,7 @@ WORKDIR /app
 
 # Copy project files and restore dependencies
 COPY . .
+COPY airdrops.txt /app/airdrops.txt
 RUN dotnet restore
 
 # Build the application
